@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Helvetica Neue", Helvetica, "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-skale-red: #C20100;
+  --color-skale-red-bright: #FF1212;
+  --color-skale-red-deep: #650000;
+  --color-skale-black: #050505;
+  --color-skale-graphite: #101010;
+  --color-skale-dark: #191919;
+  --color-skale-gray: #737373;
+  --color-skale-light: #F4F4F4;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* Subtle architectural noise texture overlay */
+.skale-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.skale-grid-dark {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.skale-grid-light {
+  background-image:
+    linear-gradient(to right, rgba(5, 5, 5, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(5, 5, 5, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Balance display headlines */
+.text-balance {
+  text-wrap: balance;
+}

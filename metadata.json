@@ -1,0 +1,6 @@
+{
+  "name": "Skale Marketing",
+  "description": "Marketing que entrega. Estratégias que impulsionam negócios. Agência de marketing digital, gestão de tráfego pago, social media, produção de conteúdo e sites em Rio Verde, Goiás.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
